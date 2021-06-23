@@ -90,7 +90,7 @@ Table of Contents
    2.  Conventions
    3.  DTLS Considerations
      3.1.  Version of DTLS
-     3.2.  Cipher Suites
+     3.2.  Cipher Suites and Cryptographic Parameters
      3.3.  Message Sizes
      3.4.  Replay Protection
      3.5.  Path MTU Discovery
@@ -266,10 +266,11 @@ Table of Contents
    used.  It is expected that DTLS/SCTP as described in this document
    will work with future versions of DTLS.
 
-3.2.  Cipher Suites
+3.2.  Cipher Suites and Cryptographic Parameters
 
    For DTLS 1.2, the cipher suites forbidden by [RFC7540] MUST NOT be
-   used.  Cipher suites without encryption MUST NOT be used.
+   used.  For all versions of DTLS, cryptographic parameters giving
+   confidentiality and Perfect Forward Secrecy (PFS) MUST be used.
 
 3.3.  Message Sizes
 
